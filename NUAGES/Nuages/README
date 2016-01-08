@@ -1,0 +1,55 @@
+Nuages is a package for 3D reconstruction from parallel
+cross-sectional data. It uses the Delaunay triangulation.
+
+Input : a set of simple closed polygons on parallel planes.
+-----   There may be several (nested) polygons per plane.
+
+Output: A set of triangles representing the surface of a 3D poly-
+------  hedra, and/or a set of tetrahedra filling the 3D polyhedra.
+        The program adds vertices onto and inside the contours.
+
+
+This directory contains the executable files:
+
+NUAGES_SunOS_4.1.3_U1.tar.Z    SunOS_4
+NUAGES_SunOS_5.5.tar.Z         Solaris
+NUAGES_IRIX_5.3.tar.Z          SGI  IRIX 5.3
+NUAGES_IRIX_6.2.tar.Z          SGI  IRIX 6.2
+NUAGES_HP-UX_10.20.tar.Z       HP UX 10.20
+NUAGES_SGI.tar.Z               SGI  IRIX 4.0.5           (*)
+NUAGES_DEC.tar.Z               Decstation  (ultrix)      (*)
+NUAGES_LINUX.tar.Z                                       (*)
+NUAGES_RS6000.tar.Z            IBM RS6000 Aix            (*)
+
+(*) May not be the most recent version. See the included CHANGES file.
+
+Bibliography
+------------
+
+B. Geiger.
+Three-dimensional modeling of human organs and its application to
+diagnosis and surgical planning.
+Technical Report 2105, Institut National de Recherche en Informatique
+et Automatique, (France), Dec 1993.
+
+(Available on ftp-sop.inria.fr: prisme/NUAGES/Nuages/RR2105.ps.gz)
+
+
+Author Bernhard Geiger
+Copyright (C) 1993-1997 by INRIA Sophia Antipolis
+
+Permission to use, copy, modify, and distribute this software and its
+documentation for educational, research, and non-profit purposes without
+fee is hereby granted, provided that the above copyright notice and the
+original authors name appear in all copies and that both that copyright
+notice and this permission notice appear in supporting documentation.
+This software is provided "as is" without express or implied warranty.
+
+
+
+--------
+Bernhard Geiger
+
+INRIA Sophia-Antipolis                         email: nuages@sophia.inria.fr
+2004, Route des Lucioles BP 93                 fax:   +33 93 65 76 43
+06902 Sophia Antipolis Cedex (France)

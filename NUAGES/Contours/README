@@ -1,0 +1,101 @@
+This directory contains contour data extracted mostly from
+tomographic images. We used it to test our 3D reconstruction
+method. Sometimes it was a major problem to find suitable
+data, and by making our set accessable we hope to do an
+useful contribution to the development of 3D reconstruction.
+
+We think it is a good idea to test different reconstruction
+methods with the same data. In this way the results may be
+compared.
+
+Most data was extracted manually, which is a time consuming
+work. If you use the data in publications, please include an
+acknowledgement.
+
+
+Feedback is welcome; also we would be grateful if you could
+contribute with some of your own contour sets to enlarge
+this collection. Please send contour data, questions,
+remarks, etc. to the address below.
+
+
+Bernhard Geiger
+INRIA Sophia Antipolis
+France
+
+geiger@sophia.inria.fr
+
+
+
+Description:
+============
+
+
+heart
+-----
+29 cross-sections of a human heart. Manually
+extracted from MRI. From the same data set as Lung.
+
+lung
+----
+34 cross-sections of lungs. Manually extracted from
+the same MRI data set as Heart.
+
+
+hip1
+----
+Human hip joint and cartilage from MRI images.
+Manually extracted.
+
+head1
+-----
+17 cross-sections of head and brain. From MRI data.
+
+torus
+-----
+Synthetic cross-sections of a torus. Useful
+for accuracy tests.
+
+pelvis1
+_______
+23 cross-sections of a pelvis. Manually extracted from MRI-Images.
+
+skull
+_____
+113 cross-sections of a skull, obtained by thresholding from the
+UNC Chapel Hill Volume Rendering Test Dataset.
+
+
+data format:
+============
+We use a simple ASCII format that may be easily adapted to
+any other format. The contours are given by simple closed
+polygons. One cross-section may contain several such polygons,
+possibly some lying inside others. They are oriented in a way
+that the inside of a contour (material) is on its righthand side.
+The xy-coordinates are in the range of [0..512].
+Example:
+
+S 23            /* number of cross-sections = 23*/
+V 34  z 14.7    /* first cross-section: 34 vertices, z = 14.7 */
+{               /* first contour */
+246.00 164.00   /* x y coordinates */
+236.00 166.00
+233.00 181.00
+216.00 218.00
+ .
+ .
+ .
+}               /* end of first contour */
+{               /* second contour */
+ .
+ .
+ .
+}               /* end of second contour */
+V 21  z 28.4    /* second cross-section: 21 vertices, z = 28.4 */
+{
+ .
+ .
+ .
+}
+etc

@@ -1,0 +1,4 @@
+This directory contains 4 contour sets of a torus.
+The torus is centered at (127.5, 127.5. 0.0). Its
+main radius is 90, small radius 30. It has been
+turned around the x-axis by 75 degrees.

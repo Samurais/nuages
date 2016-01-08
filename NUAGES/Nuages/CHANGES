@@ -1,0 +1,77 @@
+ Apr 15 1997 Bug fix (SunOS 4.x)
+
+ Dec  8 1996 Bugs in repros2tetra, repros2visu. General speedup.
+
+____________________________________________________________________
+nuages version 4.1                                       Oct 30 1996
+____________________________________________________________________
+
+
+ Oct 30 1996 tool for contour extraction added
+             stl format added
+ May 15 1996 repros: options -intf and -mindist added. Improved
+             behavior for slanted surfaces with small concavities.
+             option -stretch works reasonable now.
+
+ Feb  6 1996 man pages changed.
+
+ Dec 10 1995 Inventor format and VRML format added.
+
+ May 19 1995 in_out.c: one more bug related to option +int removed
+             nuages: option -prepros added
+
+ Jan 25 1995 ANSI C, purified
+
+ Jan 20 1995 repros2visu : -n for OFF, OBJ, IDX format completed
+
+ Nov 23 1994 handle deadlock in repros.
+
+ Sep  5 1994 <malloc.h> added, sgi version compiled with -lmalloc
+             repros2visu :renormalization of normals after -matrix
+             repros: uninitialized memory usage 
+             repros: volume output
+
+ Jul 26 1994 tri3D.c:  nearest() replaced by nearest_p()
+             (for IBM6000 compat)  
+             repros2tetra:  -statistic added
+
+ Jul 15 1994 prepros.c: -mask, -circle, -s_approx added 
+ Jul 15 1994 repros2visu.c: Several modifications 
+             (-n changed, -matrix added)
+
+ Jun 20 1994 prepros.c: Check if number of vertices is correct
+
+ Apr 12 1994 prepros.c: Option -elim added
+             prepros.c: bug if number of contours > Maxcontour
+             removed
+
+ Mar  9 1994 repros2visu.c: bug in idx format removed 
+
+
+ Jan 21  1994 in_out.c: bug related to option +int removed
+
+
+____________________________________________________________________
+nuages version 4.0                                       Dec  8 1993
+____________________________________________________________________
+
+
+This version is not compatible with older versions.
+Major changes :
+
+-new input file format for contours (one file instead of two)
+ A tool to convert from old to new format is provided (r2e).
+
+-internal vertices are added by default. One single run
+ of repros is sufficient.
+
+-the pixel-contour approximation is done by the prepros preprocessor.
+
+-the default output format of repros2visu is wavefront .obj format.
+
+-connected component numbering in repros2tetra is now ok.
+
+-call_repros is now called nuages
+
+-the number of detected ancient bugs may be equal to the number of
+ newly implemented bugs.

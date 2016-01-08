@@ -1,0 +1,9 @@
+This directory contains conversion routines
+for different data formats.
+
+e2r.c        convert .cnt files to pre 4.0 nuages-format
+nasa2e.c     convert nasa contour format to .cnt files
+
+vera2pov-1.0 converts nuages vera-formatted output to
+             PoV version 2.x-formatted file (By Matthew T. Adams
+             (mtadams@columbine.hsc.colorado.edu))
